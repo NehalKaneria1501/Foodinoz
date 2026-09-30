@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "orders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "dateStr", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "ai_chat_history",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "isUser", "order": "ASCENDING" },
+        { "fieldPath": "timestamp", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

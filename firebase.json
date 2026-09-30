@@ -1,0 +1,50 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "jeerola-eefba",
+          "appId": "1:678980676298:android:6542c17fcdc786bd3fe233",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "jeerola-eefba",
+          "appId": "1:1082648291034:ios:7361928471928374619283",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "jeerola-eefba",
+          "configurations": {
+            "android": "1:678980676298:android:6542c17fcdc786bd3fe233",
+            "ios": "1:1082648291034:ios:7361928471928374619283",
+            "web": "1:1082648291034:web:9182371928472918472918"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "site": "jeerola-eefba",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
